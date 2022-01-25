@@ -1,0 +1,39 @@
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .drop-btn {
+  font-size: .9275rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content-selected{
+  display: block;
+  font-family: "Yantramanav";
+  font-weight: 300;
+  font-size: .875rem;
+  margin-top: .5rem;
+}
+
+.dropdown-content-selected li:hover{
+  text-decoration: underline;
+}
+
+.drop-btn:hover {
+  text-decoration: underline;
+  text-decoration-thickness: .150rem;
+  cursor: pointer;
+}
+
+.dropdown .link {
+  text-decoration: none;
+  color: black;
+}

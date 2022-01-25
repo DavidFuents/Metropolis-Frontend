@@ -1,0 +1,44 @@
+.collection-card img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.collection-card .solid-divider {
+  width: 3.5rem;
+  border-top: 1px solid black;
+}
+
+.collection-card .link {
+  font-family: "Yantramanav";
+  font-weight: 400;
+  font-size: .875rem;  
+  color: black;
+  text-align: left;
+  text-decoration: none;
+}
+
+.collection-card .link:hover {
+  text-decoration: underline;
+}
+
+.collection-card-title {
+  font-family: 'Yantramanav';
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.collection-card-description{
+  font-family: 'Yantramanav';
+  font-weight: 200;
+  font-size: .8875rem;
+  padding-bottom: .6rem;
+}
+
+.collection-card-description, .collection-card-title {
+  padding: .8rem 0;
+}
+

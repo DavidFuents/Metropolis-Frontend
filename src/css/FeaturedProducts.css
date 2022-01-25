@@ -1,0 +1,35 @@
+.featured-products-title {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.featured-products-container li {
+  list-style-type: none;
+}
+
+.featured-product {
+  width: 100%;
+}
+
+@media screen and (min-width: 1021px) {
+  .featured-products-container {
+    height: auto;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .featured-products-container {
+    height: auto;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+  }
+}

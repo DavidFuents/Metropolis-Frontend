@@ -1,0 +1,51 @@
+.cart-product-card-container {
+  display: flex;
+  align-items: flex-start;
+  padding: .5rem 0;
+  list-style: none;
+}
+
+.cart-product-img {
+  height: 5rem;
+  width: 5rem;
+  padding-right: .875rem;
+}
+
+.cart-product-name, .cart-product-price {
+  font-family: 'Yantramanav';
+  font-weight: 500;
+  font-size: .8875rem;
+}
+
+.cart-product-color, .cart-product-size, .cart-product-quantity {
+  font-family: "Yantramanav";
+  font-weight: 300;
+  font-size: .8875rem;
+  padding-bottom: 0;
+}
+
+.cart-product-price, .cart-product-color {
+  padding-right: .8875rem;
+}
+
+.cart-product-card-right{
+  margin-left: auto;
+}
+
+.cart-card-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-card-btn-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.cart-solid-divider {
+  width: 100%;
+  border-top: .0625rem solid #bcbcbc;
+  margin: auto;  
+}

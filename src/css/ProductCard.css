@@ -1,0 +1,88 @@
+.product-card {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.product-size-link {
+  font-family: 'Yantramanav';
+  font-size: .875rem;
+  text-decoration: none;
+  color: black;
+}
+
+.product-size-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: .150rem;
+}
+
+/* .tooltip {
+  position: relative;
+} */
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.product-card img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.product-card-info { 
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.product-card-name {
+  font-family: 'Yantramanav';
+  font-weight: 500;
+  font-size: .8875rem;
+}
+
+.product-card-price {
+  padding-top: 1rem;
+}
+
+.product-card-price, .product-card-color {
+  font-family: "Yantramanav";
+  font-weight: 300;
+  font-size: .8rem;
+  padding-bottom: 0;
+}
+
+.product-card-name {
+  padding: .6rem 0 .25rem;
+}
+
+@media screen and (min-width: 1321px) {
+  .product-card li {
+    display: inline-block;
+    padding: .725rem 1.225rem;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .product-card li {
+    display: inline-block;
+    padding: .725rem .8875rem;
+  }
+}

@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;  
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 2;
+}
+
+.navbar .item {
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 500;
+  font-size: .8rem;
+  color: black;
+  padding: .5rem 1.125rem .25rem;
+  text-decoration: none;
+}
+
+.navbar .link:hover{
+  text-decoration: underline;
+  text-decoration-thickness: .150rem;
+}
+
+.navbar .cart:hover{
+  text-decoration: underline;
+  text-decoration-thickness: .150rem;
+}
+
+@media screen and (min-width: 1021px) {
+  .navbar .logo {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 auto;
+    padding-right: 258px;
+  }  
+
+  .links {
+    display: inline-block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .navbar .logo {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 auto;
+  }  
+
+  .links{
+    display: none;
+  }
+
+  .navbar-menu {
+    display: inline-flex;
+  }
+}

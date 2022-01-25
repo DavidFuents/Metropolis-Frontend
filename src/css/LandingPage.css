@@ -1,0 +1,6 @@
+.container {
+  height: 100vh;
+  background-image: url("https://davidfuents-media.s3.us-east-2.amazonaws.com/N_20.jpeg");
+  background-size: cover; 
+  background-position: center;
+}
