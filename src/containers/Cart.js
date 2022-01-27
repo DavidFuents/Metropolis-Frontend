@@ -17,12 +17,14 @@ class Cart extends Component {
             <div className="cart-products-container">
               {this.renderCartedProducts()}
             </div>
-            <h4 className="cart-subtotal">Subtotal: </h4>
+            <h4 className="cart-subtotal">
+              Subtotal: ${this.renderCartTotal()}
+            </h4>
           </div>
           <div className="checkout-container">
             <h2 className="checkout-title">Checkout</h2>
             <div className="solid-divider"></div>
-            <button className="checkout-btn">Checkout as guest</button> 
+            <button className="checkout-btn">Checkout as guest</button>
           </div>
         </div>
       </>
@@ -36,6 +38,16 @@ class Cart extends Component {
         removeFromCart={this.props.removeFromCart}
       />
     ));
+  };
+
+  renderCartTotal = () => {
+    let total = 0;
+
+    this.props.cartProducts.map(
+      (product) => (total += product.price * product.quantity)
+    );
+
+    return total;
   };
 }
 
