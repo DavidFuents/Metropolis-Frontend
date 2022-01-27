@@ -6,20 +6,13 @@ const initialState = {
 export default function cartManager(state = initialState, action) {
   switch (action.type) {
     case "cart/add_product":
-      const product = {
-        ...action.payload.product,
-        sizeSelected: action.payload.sizeSelected,
-        quantity: action.payload.quantity,
-      };
-
       return {
         ...state,
         cartCount: state.cartCount + action.payload.quantity,
-        cartProducts: [...state.cartProducts, product],
+        cartProducts: [...state.cartProducts, action.payload],
       };
 
     case "cart/remove_product":
-      console.log(action.payload)
       return {
         ...state,
         cartCount: state.cartCount - action.payload.quantity,

@@ -23,7 +23,7 @@ class AddToCartForm extends Component {
     event.preventDefault();
 
     const formData = {
-      product: this.props.product,
+      ...this.props.product,
       sizeSelected: this.state.sizeSelected,
       quantity: 1,
     }
